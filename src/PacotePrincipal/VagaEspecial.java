@@ -7,15 +7,9 @@ public class VagaEspecial extends Vaga{
 		/*Fazer isso em todas as subclasses, com os valores da especificacao*/
 	}
 	
-	@Override
-	public Nota calculaNota(String horaSaida){
-		Hora saida = new Hora(horaSaida);
-		Nota nota = new Nota(this, saida);
-		return nota;
-	}
 	
 	@Override
-	public String toString(){
+	public String tipoVaga(){
 		return new String("NE");
 		/*Fazer isso em todas as subclasses*/
 	}

@@ -15,7 +15,7 @@ public class Nota {
 		int intervaloMin;
 		double tarifa;
 		
-		this.tipoVaga = vaga.toString();
+		this.tipoVaga = vaga.tipoVaga();
 		intervaloMin = Hora.getIntervaloMinutos(vaga.getHoraEntrada(), saida);
 		tarifa = vaga.getPreco()/60;
 		this.preco = tarifa*((double)intervaloMin);

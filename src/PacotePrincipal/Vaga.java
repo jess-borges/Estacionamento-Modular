@@ -38,6 +38,11 @@ public abstract class Vaga {
 		this.veiculo = veiculo;
 	}
 
-	public abstract Nota calculaNota(String horaSaida);
+	public Nota calculaNota(String horaSaida){
+		Hora saida = new Hora(horaSaida);
+		Nota nota = new Nota(this, saida);
+		return nota;
+	}
 	
+	public abstract String tipoVaga();
 }
