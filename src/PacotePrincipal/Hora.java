@@ -57,7 +57,6 @@ public class Hora {
 	@Override
 	public String toString(){
 		String string = Integer.toString(this.horas) + ":" + Integer.toString(this.minutos);
-		/* testar se dá certo */
 		return string;
 	}
 }

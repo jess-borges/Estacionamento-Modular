@@ -4,12 +4,11 @@ public class VagaMoto extends Vaga{
 
 	public VagaMoto(){
 		super();
+		super.setPreco(3.5);
 	}
 	
 	@Override
-	public Nota calculaNota(String horaSaida){
-		Nota nota;
-		/* implementar*/
-		return nota;
+	public String tipoVaga(){
+		return new String("MT");
 	}
 }

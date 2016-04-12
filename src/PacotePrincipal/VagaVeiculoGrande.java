@@ -3,13 +3,13 @@ package PacotePrincipal;
 public class VagaVeiculoGrande extends Vaga{
 
 	public VagaVeiculoGrande(){
-		super(); 
+		super();
+		super.setPreco(8.0);
 	}
 	
+	
 	@Override
-	public Nota calculaNota(String horaSaida){
-		Nota nota;
-		/* implementar*/
-		return nota;
+	public String tipoVaga(){
+		return new String("VG");
 	}
 }
